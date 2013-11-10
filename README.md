@@ -82,6 +82,7 @@ For more information about keymap, execute <kbd>C-c ?</kbd> `helm-git-grep-help`
 |<kbd>C-x C-s</kbd>|helm-git-grep-run-save-buffer|Save helm git grep result in a `grep-mode` buffer.
 |<kbd>C-c o</kbd>|helm-git-grep-run-other-window-action |Jump to result in other window.|
 |<kbd>C-c i</kbd>|helm-git-grep-toggle-ignore-case| Toggle ignore case option.|
+|<kbd>C-c n</kbd>|helm-git-grep-toggle-showing-trailing-leading-line| Toggle show leading and trailing lines option.|
 |<kbd>C-w</kbd>|helm-yank-text-at-point|Yank text at point in invocation buffer into minibuffer.|
 |<kbd>C-c ?</kbd>|helm-git-grep-help |Help command for `helm-git-grep`.|
 |<kbd>M-&lt;down&gt;</kbd> |helm-goto-next-file | Go to precedent file in helm git grep buffers. |
@@ -101,6 +102,10 @@ A buffer name is `*helm git grep*` without ignore case option.
 
 ![](https://github.com/yasuyk/helm-git-grep/raw/master/image/without-ignore-case-option.png)
 
+#### <kbd>C-c n</kbd> helm-git-grep-toggle-showing-trailing-leading-line
+
+TODO
+
 ## Customization
 
 #### `helm-git-grep-candidate-number-limit`(Default: `300`)
@@ -114,6 +119,14 @@ Max number of elements to save in `helm-git-grep-history`.
 #### `helm-git-grep-use-ioccur-style-keys`(Default: `t`)
 
 Use Arrow keys to jump to occurrences.
+
+#### `helm-git-grep-showing-leading-and-trailing-lines`(Default: `nil`)
+
+Show leading and trailing lines.
+
+### `helm-git-grep-showing-leading-and-trailing-lines-number`(Default: `1`)
+
+Number of showing leading and trailing lines option.
 
 ## Note
 
